@@ -21,23 +21,23 @@ A responsive personal address book built with JavaScript, CSS and Vite. Manage c
 
 ```text
 AgendApp/
-|-- docs/screenshots/          # Application screenshots
+|-- docs/screenshots/
 |-- examples/
-|   `-- agenda-2026-10-12.csv   # Sample exported CSV
-|-- public/favicon.svg        # Application icon
+|   `-- agenda-2026-10-12.csv
+|-- public/favicon.svg
 |-- src/
-|   |-- contacts.js           # Shared validation, CSV handling and search
-|   |-- translations.js       # English and Italian interface text
-|   |-- main.js               # Interface and contact operations
-|   `-- styles.css            # Themes and responsive layout
-|-- tests/contacts.test.js     # Automated tests
+|   |-- contacts.js
+|   |-- translations.js
+|   |-- main.js
+|   `-- styles.css
+|-- tests/contacts.test.js
 |-- .gitignore
-|-- index.html                # HTML entry point
+|-- index.html
 |-- LICENSE
-|-- package-lock.json         # Dependency lockfile
-|-- package.json              # Dependencies and npm commands
+|-- package-lock.json
+|-- package.json
 |-- README.md
-`-- vite.config.js            # Vite configuration
+`-- vite.config.js
 ```
 
 ## Features
@@ -71,7 +71,6 @@ The screenshots illustrate the interface. The import preview also includes the v
 Open a terminal in the project directory, where `package.json` is located. From Development:
 
 ```powershell
-cd ".\Web Apps\AgendApp"
 npm install
 npm run dev
 ```
@@ -114,7 +113,7 @@ After confirmation, the result reports new contacts imported, contacts updated, 
 
 Select **Export CSV** to download the currently displayed contacts, respecting the active search, country filter and favorites view. Headers follow the selected interface language.
 
-Exports use UTF-8 with a BOM, semicolon separators and quoted fields. Values that could be interpreted as spreadsheet formulas are protected with a leading apostrophe; the importer removes this protection when reading an exported file. Contact IDs and favorite flags are not included in CSV exports.
+Exports use UTF-8, semicolon separators and quoted fields. Values that could be interpreted as spreadsheet formulas are protected with a leading apostrophe; the importer removes this protection when reading an exported file. Contact IDs and favorite flags are not included in CSV exports.
 
 ## Storage and backups
 
@@ -126,13 +125,13 @@ Duplicate detection can produce false positives for people sharing the same name
 
 ## Tests and build
 
-| Command | Purpose |
-| --- | --- |
-| `npm install` | Install dependencies. |
-| `npm run dev` | Start the development server. |
-| `npm test` | Run the automated Node.js tests. |
-| `npm run build` | Generate production files in `dist/`. |
-| `npm run preview` | Preview the generated build locally. |
+| Command           | Purpose                               |
+| ----------------- | ------------------------------------- |
+| `npm install`     | Install dependencies.                 |
+| `npm run dev`     | Start the development server.         |
+| `npm test`        | Run the automated Node.js tests.      |
+| `npm run build`   | Generate production files in `dist/`. |
+| `npm run preview` | Preview the generated build locally.  |
 
 ```sh
 npm test
@@ -140,18 +139,16 @@ npm run build
 npm run preview
 ```
 
-Tests cover searching, sorting, model validation, CSV round trips, formula protection, contact validation, duplicate detection and optional import updates. Publish the contents of `dist/` to static hosting; preview does not publish the app. Rebuild after source changes to update the preview.
-
 ## Troubleshooting
 
-| Problem | Check |
-| --- | --- |
-| npm cannot find `package.json` | Run commands from the project directory. |
-| `vite` is not recognized | Complete `npm install` before starting the app. |
-| A contact cannot be saved | Check the validation messages inside the form. |
-| A CSV is rejected | Check the extension, encoding, size, headers and structure. |
-| No new contacts are imported | Review the duplicate and invalid-row counts. |
-| The interface remains Italian | Switch to `EN`; the browser retains an existing language preference. |
+| Problem                        | Check                                                                |
+| ------------------------------ | -------------------------------------------------------------------- |
+| npm cannot find `package.json` | Run commands from the project directory.                             |
+| `vite` is not recognized       | Complete `npm install` before starting the app.                      |
+| A contact cannot be saved      | Check the validation messages inside the form.                       |
+| A CSV is rejected              | Check the extension, encoding, size, headers and structure.          |
+| No new contacts are imported   | Review the duplicate and invalid-row counts.                         |
+| The interface remains Italian  | Switch to `EN`; the browser retains an existing language preference. |
 
 ## License
 
