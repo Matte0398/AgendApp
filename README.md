@@ -22,6 +22,11 @@ A responsive personal address book built with JavaScript, CSS and Vite. Manage c
 ```text
 AgendApp/
 |-- docs/screenshots/
+|   |-- contacts-desktop.png
+|   |-- contact-validation.png
+|   |-- csv-import-preview.png
+|   |-- csv-import-result.png
+|   `-- contacts-mobile.png
 |-- examples/
 |   `-- agenda-2026-10-12.csv
 |-- public/favicon.svg
@@ -53,13 +58,23 @@ AgendApp/
 
 ## Screenshots
 
-The screenshots illustrate the interface. The import preview also includes the validation and optional update controls described below.
+### Contacts view
 
-![Contact directory](docs/screenshots/all-contacts.png)
+<img src="docs/screenshots/contact-view.png" alt="Contact view with fictional contacts" width="1000" />
 
-![New contact form](docs/screenshots/new-contact.png)
+### Contact validation
 
-![Contact details](docs/screenshots/contact-details.png)
+Invalid email and short phone messages appear inside the form while preserving the entered values.
+
+<img src="docs/screenshots/contact-validation.png" alt="Contact form showing email and phone validation errors" width="600" />
+
+### CSV import preview
+
+<img src="docs/screenshots/csv-import-preview.png" alt="CSV import preview with valid, duplicate and invalid contacts" width="600" />
+
+### Mobile directory
+
+<img src="docs/screenshots/contact-mobile.png" alt="Contact directory on a mobile viewport" width="390" />
 
 ## Requirements
 
