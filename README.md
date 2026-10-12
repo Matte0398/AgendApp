@@ -5,6 +5,7 @@ A responsive personal address book built with JavaScript, CSS and Vite. Manage c
 ## Contents
 
 - [Repository Structure](#repository-structure)
+- [Tech stack](#tech-stack)
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Requirements](#requirements)
@@ -44,6 +45,22 @@ AgendApp/
 |-- README.md
 `-- vite.config.js
 ```
+
+## Tech stack
+
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000000)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![CSS](https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=css&logoColor=FFFFFF)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=FFFFFF)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFFFFF)](https://vite.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-417E38?style=for-the-badge&logo=nodedotjs&logoColor=FFFFFF)](https://nodejs.org/)
+[![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=FFFFFF)](https://www.npmjs.com/)
+
+- **JavaScript:** application logic, contact validation and CSV handling.
+- **HTML and CSS:** interface structure, themes and responsive layout.
+- **Vite:** development server and production build.
+- **Node.js and npm:** development tools, dependency management and automated tests.
+- **Browser localStorage:** local storage for contacts and preferences.
+- **SVG:** reusable interface icons.
 
 ## Features
 
